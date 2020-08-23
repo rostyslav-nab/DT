@@ -1,0 +1,17 @@
+.newPostButton {
+  width: 180px;
+  height: 40px;
+  background-color: #151919;
+  border-radius: 10px;
+  border-style: none;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 20px;
+
+  &:hover {
+    background-color: #fff;
+    border-style: solid;
+    border-color: #151919;
+    color: #151919;
+  }
+}

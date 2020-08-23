@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { useState } from "react"
 import {AppWrapper} from "../../components/AppWrapper"
+import classes from '../../styles/newPost.module.scss'
 
 export default function CreateNewPost() {
 
@@ -41,7 +42,7 @@ export default function CreateNewPost() {
                     <label htmlFor="body">Text of the Post</label>
                     <input type="text" onChange={textHandler} className="form-control" aria-describedby="body"/>
                 </div>
-                <button className='btn btn-success'>Add Post</button>
+                <button className={classes.newPostButton}>Add Post</button>
             </form>
         </AppWrapper>
     )

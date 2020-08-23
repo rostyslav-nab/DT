@@ -1,0 +1,47 @@
+.mainTitle {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+.postList {
+  div{
+    margin-top: 10px;
+  }
+  a {
+    color: #151919;
+    text-decoration: none;
+    font-size: 30px;
+
+    &:hover {
+      color: #d6b907;
+      transition: all 1s;
+    }
+  }
+}
+
+.newPostButton {
+  width: 180px;
+  height: 40px;
+  background-color: #151919;
+  border-radius: 10px;
+  border-style: none;
+  margin-top: 20px;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: #fff;
+    border-style: solid;
+    border-color: #151919;
+
+    a {
+      color: #151919;
+    }
+
+  }
+}

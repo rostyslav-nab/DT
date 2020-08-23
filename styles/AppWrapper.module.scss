@@ -1,12 +1,39 @@
+.appWrapper{
+  min-height: 1000px;
+  margin-bottom: 100px;
+}
+
 .navigation {
-  height: 100px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  a{
-    text-decoration: none;
-    color: #891883;
+  height: 300px;
+  background-color: #151919;
+  padding-top: 30px;
+
+  h1{
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
     font-weight: bold;
-    font-size: 30px;
   }
 }
+
+.menu {
+  justify-content: space-around;
+  display: flex;
+
+  a{
+    text-decoration: none;
+    color: #D0D0D0;
+    font-size: 20px;
+    &:hover {
+      color: #fff;
+      transition: 1.5s;
+    }
+  }
+
+}
+
+.mainLogo {
+  margin-top: 20px;
+  text-align: center;
+}
+
