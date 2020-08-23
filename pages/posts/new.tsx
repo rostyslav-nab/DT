@@ -1,14 +1,30 @@
 import axios from 'axios'
-import { useState } from "react"
 import {AppWrapper} from "../../components/AppWrapper"
 import classes from '../../styles/newPost.module.scss'
+import { useSelector, useDispatch } from 'react-redux'
+const ADD_TITLE = 'ADD_TITLE'
+const ADD_TEXT = 'ADD_TEXT'
 
-export default function CreateNewPost() {
+const useCreatePost = () => {
+    const formTitle = useSelector((state) => state.formTitle)
+    const formText = useSelector((state) => state.formText)
+    const dispatch = useDispatch()
+    const titleHandler = (e):void => {
+        const text = e.target.value
+        dispatch({
+            type: ADD_TITLE,
+            formTitle: text
+        })
+    }
+    const textHandler = (e):void => {
+        const text = e.target.value
+        dispatch({
+            type: ADD_TEXT,
+            formText: text
+        })
+    }
 
-    const [formTitle, setFormTitle] = useState('')
-    const [formText, setFormText] = useState('')
-
-    const submitFormHandler = (e) => {
+    const submitFormHandler = (e):void => {
         e.preventDefault()
         axios({
             method: 'post',
@@ -20,15 +36,12 @@ export default function CreateNewPost() {
         });
     }
 
-    const titleHandler = (e) => {
-        const text = e.target.value
-        setFormTitle(text)
-    }
 
-    const textHandler = (e) => {
-        const text = e.target.value
-        setFormText(text)
-    }
+    return { titleHandler, textHandler, submitFormHandler }
+}
+
+export default function CreateNewPost() {
+    const { titleHandler, textHandler, submitFormHandler } = useCreatePost()
     return (
         <AppWrapper>
             <h1>Create new post</h1>
