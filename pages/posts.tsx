@@ -12,7 +12,7 @@ interface PostsPageProps {
 
 export default function Posts({posts}: PostsPageProps) {
 
-    const deletePostHandler = (postId) => {
+    const deletePostHandler = (postId: string | number): void => {
         axios.delete(`https://simple-blog-api.crew.red/posts/${postId}`)
         Router.push('/')
     }

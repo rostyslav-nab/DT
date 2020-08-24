@@ -25,7 +25,7 @@ const useAddComment = () => {
         })
     }
 
-    const submitFormHandler = (e) => {
+    const submitFormHandler = () => {
         if(!commentBody){
             return null
         }

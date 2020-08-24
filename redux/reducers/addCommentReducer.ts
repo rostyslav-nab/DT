@@ -1,6 +1,8 @@
+import {AddComment} from "../../interfaces/addComment"
+
 const ADD_COMMENT = "ADD_COMMENT"
 
-const initialState = {
+const initialState: AddComment = {
     body: '',
     postId: ''
 }

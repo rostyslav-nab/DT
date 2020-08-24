@@ -2,7 +2,7 @@ import axios from 'axios'
 import {AppWrapper} from "../../components/AppWrapper"
 import classes from '../../styles/newPost.module.scss'
 import { useDispatch } from 'react-redux'
-import {useState} from "react";
+import {useState} from "react"
 
 const ADD_TITLE = 'ADD_TITLE'
 const ADD_TEXT = 'ADD_TEXT'
@@ -11,7 +11,7 @@ const useCreatePost = () => {
     const [title, setTitle] = useState('')
     const [text, setText] = useState('')
     const dispatch = useDispatch()
-    const titleHandler = (e) => {
+    const titleHandler = (e): void => {
         const text = e.target.value
         setTitle(text)
         dispatch({
@@ -20,7 +20,7 @@ const useCreatePost = () => {
         })
     }
 
-    const textHandler = (e) => {
+    const textHandler = (e) : void=> {
         const text = e.target.value
         setText(text)
         dispatch({
@@ -56,7 +56,7 @@ export default function CreateNewPost() {
                 </div>
                 <div className="form-group">
                     <label htmlFor="body">Text of the Post</label>
-                    <input type="text" onChange={textHandler} className="form-control" aria-describedby="body"/>
+                    <textarea onChange={textHandler} className="form-control" aria-describedby="body"/>
                 </div>
                 <button className={classes.newPostButton}>Add Post</button>
             </form>
