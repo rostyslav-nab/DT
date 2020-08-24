@@ -1,10 +1,11 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# This is a Next.js Blog (SSR)
 
-## Getting Started
+## Getting Started 🏁
 
 First, run the development server:
 
 ```bash
+npm i
 npm run dev
 # or
 yarn dev
@@ -14,17 +15,32 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-## Learn More
+## Learn More About Me 🕴️
 
-To learn more about Next.js, take a look at the following resources:
+#### Name: Rostyslav
+#### Job: Front-end Developer (React/Redux)
+#### My CV app <https://kyiv.codes/>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## About Progect 🖥️
 
-## Deploy on Vercel
+#### This SSR application that interacts with the API (POSTMAN) and can create posts, delete posts, leave comments
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### Technologies in this project:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  * React
+  * Next.js
+  * Redux
+  * TypeScript
+  * axios
+  * SCSS
+  * POSTMAN
+
+## Post Page 🚩
+![post](https://cdn1.savepice.ru/uploads/2020/8/24/a654a1398ecb70ad05917158c7edfaf8-full.jpg)
+
+## Comment Page ⌨️
+![comment](https://cdn1.savepice.ru/uploads/2020/8/24/82d8a5d970be4c44e9a88999240f4e8b-full.jpg)
+
+## Create Post Page ✅
+![createPost](https://cdn1.savepice.ru/uploads/2020/8/24/92c7accfd51e1699e92d5e7c4721f3be-full.jpg)
