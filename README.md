@@ -1,4 +1,4 @@
-This is a Next.js Blog (SSR)
+# This is a Next.js Blog (SSR)
 
 ## Getting Started
 
@@ -16,6 +16,21 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 
 ## Learn More
 
+
+
+## About Progect 🖥️
+
+#### Technologies in this project:
+<ul>
+  <li>React<li/>
+  <li>Next.js<li/>
+  <li>Redux<li/>
+  <li>TypeScript<li/>
+  <li>axios<li/>
+  <li>SCSS<li/>
+</ul>
+
+![screen](https://prnt.sc/u4yjbb)
 
 ## Deploy on Vercel
 
