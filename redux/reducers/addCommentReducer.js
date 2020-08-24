@@ -7,10 +7,7 @@ const initialState = {
 
 export const addCommentReducer = (state = initialState, { type, payload }) => {
     if(type === ADD_COMMENT) {
-        return {
-            body: payload.ts,
-            postId: !!payload.light,
-        }
+        return {...state, body: payload.body, postId: payload.postId}
     }
 
     return state

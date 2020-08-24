@@ -4,7 +4,6 @@ import {MyPost} from "../interfaces/post"
 import {NextPageContext} from "next"
 import classes from '../styles/Posts.module.scss'
 import axios from 'axios'
-import {useState} from "react"
 import Router from 'next/router'
 
 interface PostsPageProps {
